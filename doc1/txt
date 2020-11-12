@@ -1,0 +1,13 @@
+
+
+
+jack@jack-ViB:~/test$ docker build Dockerfile
+
+
+
+jack@jack-ViB:~/test$ docker tag 6cce179a6b3f mycaddy
+
+
+jack@jack-ViB:~/test$ docker run --rm -v "$PWD/share":/usr/share/caddy -p 8080:80 mycaddy
+
+
